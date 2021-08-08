@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&display=swap");
+
+:root {
+  --primary-color: #96592b;
+}
+body {
+  background: #dec6aab5;
+  margin: 0;
+  font-family: "Bitter";
+}
+
+.navbar {
+  background: white; //#dec6aa;
+  padding: 0em 1em;
+
+  .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.3em;
+  }
+
+  .p-img {
+    width: 1.7em;
+    margin-right: 0.2em;
+    margin-bottom: -0.4em;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+}
+
+a {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+.About {
+  text-align: center;
+}
+
+.subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(92, 91, 91);
+  font-size: 1.3em;
+  margin-top: -2em;
+}
+
+.left-col {
+  .Name {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 3.2em;
+    margin-top: 0.2em;
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  .about1 {
+    text-align: left;
+    font-weight: regular;
+    font-size: 12;
+    margin-top: 3em;
+  }
+
+  .about2 {
+    text-align: left;
+    font-weight: regular;
+    font-size: 12;
+    margin-top: 3em;
+  }
+}
+.right-col {
+  .profile-pic {
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    background-color: #bb611776;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.7rem;
+    margin-right: 1.5rem;
+
+    &:hover {
+      background: var(--primary-color);
+    }
+  }
+
+  .svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 10pt;
+    color: var(--primary-color);
+    margin-top: 5em;
+    margin-right: 10em;
+  }
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: rgb(92, 91, 91);
+  height: 100vh;
+  padding: 1em;
+
+  ul.primary-nav {
+    margin-top: 5em;
+  }
+
+  li {
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      font-size: 1.3em;
+      text-align: right;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.Heading {
+  font-size: 2.5em;
+}
+
+.Education {
+  .Heading {
+    margin-top: -1em;
+  }
+  background: #a76e433c; //#c28555;
+  color: var(--primary-color);
+  margin-top: -20em;
+
+  .education-list {
+    text-transform: uppercase;
+    color: rgb(92, 91, 91);
+    font-size: 1.3em;
+    margin-top: -1em;
+    .education-line {
+      font-weight: bold;
+    }
+  }
+  .education-info {
+    color: black;
+    margin-top: 3em;
+    font-size: 13pt;
+    li:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.Experience {
+  .Heading {
+    margin-top: -1em;
+    margin-bottom: -1em;
+  }
+  background: dec6aab5;
+  color: var(--primary-color);
+
+  .experience-heading {
+    text-transform: uppercase;
+    color: rgb(92, 91, 91);
+    text-align: left;
+    font-size: 1.3em;
+    margin-top: 3em;
+    font-weight: bold;
+  }
+  .ex-span {
+    text-align: left;
+    margin-top: -1em;
+  }
+  .experience-subheading {
+    text-transform: uppercase;
+    color: rgb(92, 91, 91);
+    font-size: 13pt;
+    margin-top: -1em;
+  }
+  .experience-list {
+    color: black;
+    list-style-type: disc;
+    margin-left: 1em;
+  }
+}
+
+.Skills {
+  .Heading {
+    margin-top: -1em;
+    margin-bottom: -1em;
+  }
+  background: #a76e433c;
+  color: var(--primary-color);
+  .skills-heading {
+    text-transform: uppercase;
+    color: rgb(92, 91, 91);
+    text-align: left;
+    font-size: 1.4em;
+    margin-top: 3em;
+    font-weight: bold;
+  }
+  .skills-list {
+    color: black;
+    margin-left: 1em;
+    list-style-type: disc;
+    font-size: 13pt;
+  }
+}
+
+.InterestsProjects {
+  background: #dec6aab5;
+  color: var(--primary-color);
+  padding-top: 60px;
+  .container {
+    display: inline-flex;
+  }
+  .Heading {
+    margin-top: -1em;
+  }
+  .leftt-col {
+    max-width: 50%;
+    .InterestsProjects-info {
+      color: black;
+      text-align: left;
+      font-weight: regular;
+      font-size: 12pt;
+      line-height: 17pt;
+    }
+  }
+  .rightt-col {
+    margin-left: 10%;
+    .InterestsProjects-info {
+      color: black;
+      text-align: left;
+      font-weight: regular;
+      font-size: 12pt;
+      line-height: 17pt;
+    }
+  }
+}
+
+label {
+  display: block;
+  font-size: 13pt;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  color: black;
+  margin-left: 17%;
+}
+
+.ContactMe {
+  .Heading {
+    margin-top: -1em;
+  }
+  background: #a76e433c;
+  color: var(--primary-color);
+}
+
+input,
+textarea {
+  width: 60%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  background: rgba(245, 245, 220, 0.331);
+  margin-left: 17%;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 976px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    padding-top: 1.85em;
+
+    ul {
+      display: flex;
+    }
+
+    a {
+      color: black;
+      font-size: 1em;
+      padding: 0.1em 1em;
+    }
+
+    ul.primary-nav {
+      margin: 0;
+    }
+
+    li.contact-me-cta a {
+      color: var(--primary-color);
+      border: 3px solid var(--primary-color);
+      font-weight: bold;
+      border-radius: 5em;
+      margin-top: -0.2em;
+
+      &:hover {
+        background: var(--primary-color);
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .conatiner {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .left-col {
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: -2em;
+  }
+
+  .Education {
+    .Heading {
+      margin-left: 2em;
+    }
+    .education-list {
+      margin-left: 4em;
+    }
+    .education-info {
+      margin-left: 5em;
+      margin-right: 30%;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 2em;
+      height: 11em; //9em;
+      background: var(--primary-color);
+      left: 0;
+      margin-top: -5em;
+    }
+  }
+
+  .Experience {
+    .Heading {
+      margin-left: 2em;
+    }
+
+    .experience-heading {
+      margin-left: 4em;
+    }
+    .ex-span {
+      margin-left: 5.3em;
+    }
+    .experience-subheading {
+      margin-left: 4.8em;
+    }
+    .experience-list {
+      margin-left: 6.3em;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 2em;
+      height: 11em; //9em;
+      background: var(--primary-color);
+      left: 0;
+      margin-top: -5em;
+    }
+  }
+
+  .Skills {
+    .Heading {
+      margin-left: 2em;
+    }
+    .skills-heading {
+      margin-left: 3.6em;
+    }
+    .skills-list {
+      margin-left: 5.7em;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 2em;
+      height: 11em; //9em;
+      background: var(--primary-color);
+      left: 0;
+      margin-top: -5em;
+    }
+  }
+
+  .InterestsProjects {
+    .Heading {
+      margin-left: 2em;
+    }
+    .InterestsProjects-info {
+      margin-left: 5.1em;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 2em;
+      height: 11em; //9em;
+      background: var(--primary-color);
+      left: 0;
+      margin-top: -3.75em;
+    }
+    .rightt-col {
+      margin-left: 3%;
+    }
+  }
+
+  .ContactMe {
+    .Heading {
+      margin-left: 2em;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 2em;
+      height: 11em;
+      background: var(--primary-color);
+      left: 0;
+      margin-top: -5em;
+    }
+  }
+}

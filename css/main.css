@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&display=swap");
+:root {
+  --primary-color: #96592b;
+}
+
+body {
+  background: #dec6aab5;
+  margin: 0;
+  font-family: "Bitter";
+}
+
+.navbar {
+  background: white;
+  padding: 0em 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.3em;
+}
+
+.navbar .p-img {
+  width: 1.7em;
+  margin-right: 0.2em;
+  margin-bottom: -0.4em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.About {
+  text-align: center;
+}
+
+.subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #5c5b5b;
+  font-size: 1.3em;
+  margin-top: -2em;
+}
+
+.left-col .Name {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 3.2em;
+  margin-top: 0.2em;
+}
+
+.left-col .Name span {
+  color: var(--primary-color);
+}
+
+.left-col .about1 {
+  text-align: left;
+  font-weight: regular;
+  font-size: 12;
+  margin-top: 3em;
+}
+
+.left-col .about2 {
+  text-align: left;
+  font-weight: regular;
+  font-size: 12;
+  margin-top: 3em;
+}
+
+.right-col .profile-pic {
+  height: 30rem;
+  width: 30rem;
+}
+
+.right-col .social-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  background-color: #bb611776;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.7rem;
+  margin-right: 1.5rem;
+}
+
+.right-col .social-icon:hover {
+  background: var(--primary-color);
+}
+
+.right-col .svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.right-col .copyright {
+  text-align: center;
+  font-size: 10pt;
+  color: var(--primary-color);
+  margin-top: 5em;
+  margin-right: 10em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #5c5b5b;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.Heading {
+  font-size: 2.5em;
+}
+
+.Education {
+  background: #a76e433c;
+  color: var(--primary-color);
+  margin-top: -20em;
+}
+
+.Education .Heading {
+  margin-top: -1em;
+}
+
+.Education .education-list {
+  text-transform: uppercase;
+  color: #5c5b5b;
+  font-size: 1.3em;
+  margin-top: -1em;
+}
+
+.Education .education-list .education-line {
+  font-weight: bold;
+}
+
+.Education .education-info {
+  color: black;
+  margin-top: 3em;
+  font-size: 13pt;
+}
+
+.Education .education-info li:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.Experience {
+  background: dec6aab5;
+  color: var(--primary-color);
+}
+
+.Experience .Heading {
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
+
+.Experience .experience-heading {
+  text-transform: uppercase;
+  color: #5c5b5b;
+  text-align: left;
+  font-size: 1.3em;
+  margin-top: 3em;
+  font-weight: bold;
+}
+
+.Experience .ex-span {
+  text-align: left;
+  margin-top: -1em;
+}
+
+.Experience .experience-subheading {
+  text-transform: uppercase;
+  color: #5c5b5b;
+  font-size: 13pt;
+  margin-top: -1em;
+}
+
+.Experience .experience-list {
+  color: black;
+  list-style-type: disc;
+  margin-left: 1em;
+}
+
+.Skills {
+  background: #a76e433c;
+  color: var(--primary-color);
+}
+
+.Skills .Heading {
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
+
+.Skills .skills-heading {
+  text-transform: uppercase;
+  color: #5c5b5b;
+  text-align: left;
+  font-size: 1.4em;
+  margin-top: 3em;
+  font-weight: bold;
+}
+
+.Skills .skills-list {
+  color: black;
+  margin-left: 1em;
+  list-style-type: disc;
+  font-size: 13pt;
+}
+
+.InterestsProjects {
+  background: #dec6aab5;
+  color: var(--primary-color);
+  padding-top: 60px;
+}
+
+.InterestsProjects .container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.InterestsProjects .Heading {
+  margin-top: -1em;
+}
+
+.InterestsProjects .leftt-col {
+  max-width: 50%;
+}
+
+.InterestsProjects .leftt-col .InterestsProjects-info {
+  color: black;
+  text-align: left;
+  font-weight: regular;
+  font-size: 12pt;
+  line-height: 17pt;
+}
+
+.InterestsProjects .rightt-col {
+  margin-left: 10%;
+}
+
+.InterestsProjects .rightt-col .InterestsProjects-info {
+  color: black;
+  text-align: left;
+  font-weight: regular;
+  font-size: 12pt;
+  line-height: 17pt;
+}
+
+label {
+  display: block;
+  font-size: 13pt;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  color: black;
+  margin-left: 17%;
+}
+
+.ContactMe {
+  background: #a76e433c;
+  color: var(--primary-color);
+}
+
+.ContactMe .Heading {
+  margin-top: -1em;
+}
+
+input,
+textarea {
+  width: 60%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(245, 245, 220, 0.331);
+  margin-left: 17%;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 976px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    padding-top: 1.85em;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.contact-me-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+  .navbar nav li.contact-me-cta a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .conatiner {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .left-col {
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: -2em;
+  }
+  .Education .Heading {
+    margin-left: 2em;
+  }
+  .Education .education-list {
+    margin-left: 4em;
+  }
+  .Education .education-info {
+    margin-left: 5em;
+    margin-right: 30%;
+  }
+  .Education:before {
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 11em;
+    background: var(--primary-color);
+    left: 0;
+    margin-top: -5em;
+  }
+  .Experience .Heading {
+    margin-left: 2em;
+  }
+  .Experience .experience-heading {
+    margin-left: 4em;
+  }
+  .Experience .ex-span {
+    margin-left: 5.3em;
+  }
+  .Experience .experience-subheading {
+    margin-left: 4.8em;
+  }
+  .Experience .experience-list {
+    margin-left: 6.3em;
+  }
+  .Experience:before {
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 11em;
+    background: var(--primary-color);
+    left: 0;
+    margin-top: -5em;
+  }
+  .Skills .Heading {
+    margin-left: 2em;
+  }
+  .Skills .skills-heading {
+    margin-left: 3.6em;
+  }
+  .Skills .skills-list {
+    margin-left: 5.7em;
+  }
+  .Skills:before {
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 11em;
+    background: var(--primary-color);
+    left: 0;
+    margin-top: -5em;
+  }
+  .InterestsProjects .Heading {
+    margin-left: 2em;
+  }
+  .InterestsProjects .InterestsProjects-info {
+    margin-left: 5.1em;
+  }
+  .InterestsProjects:before {
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 11em;
+    background: var(--primary-color);
+    left: 0;
+    margin-top: -3.75em;
+  }
+  .InterestsProjects .rightt-col {
+    margin-left: 3%;
+  }
+  .ContactMe .Heading {
+    margin-left: 2em;
+  }
+  .ContactMe:before {
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 11em;
+    background: var(--primary-color);
+    left: 0;
+    margin-top: -5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
